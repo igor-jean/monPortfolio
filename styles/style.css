@@ -146,19 +146,38 @@ main .presentation img {
 main .presentation .flex {
   justify-content: space-between;
 }
+@media screen and (max-width: 1300px) {
+  main .presentation .flex {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 15px;
+  }
+}
 main .presentation .flex p {
   width: 60%;
   font-size: 1.2rem;
 }
+@media screen and (max-width: 1300px) {
+  main .presentation .flex p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 630px) {
+  main .presentation .flex p {
+    font-size: 1rem;
+  }
+}
 main .presentation .flex img {
   width: 30%;
+  min-width: 218px;
 }
 main .skills {
   margin: 70px 0;
 }
 main .skills .flex {
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 main .skills li {
   display: flex;
@@ -233,6 +252,8 @@ main .cv h2 {
 main .cv img {
   display: block;
   margin: 15px auto 50px;
+  width: 100%;
+  max-width: max-content;
 }
 main .cv a {
   padding: 10px 7px;
@@ -264,11 +285,27 @@ footer .contact .column-30-70 {
   grid-template-columns: 30% 70%;
   color: white;
 }
+@media screen and (max-width: 1400px) {
+  footer .contact .column-30-70 {
+    display: block;
+  }
+}
 footer .contact .left-part {
   display: flex;
   flex-direction: column;
   height: 60%;
   justify-content: space-around;
+}
+@media screen and (max-width: 1400px) {
+  footer .contact .left-part {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 900px) {
+  footer .contact .left-part {
+    flex-direction: column;
+    gap: 13px;
+  }
 }
 footer .contact .left-part p a {
   color: rgb(196, 196, 196);
@@ -311,6 +348,11 @@ footer .contact form .flex {
   grid-template-columns: 1fr 1fr;
   gap: 15px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 645px) {
+  footer .contact form .flex {
+    display: block;
+  }
 }
 footer .contact form .flex-column {
   display: flex;

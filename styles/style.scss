@@ -154,18 +154,35 @@ main {
         img {
             object-fit: cover;
             object-position: center;
+
         }
 
         .flex {
             justify-content: space-between;
 
+            @media screen and (max-width: 1300px) {
+                flex-direction: column-reverse;
+                align-items: center;
+                gap: 15px;
+            }
+
             p {
                 width: 60%;
                 font-size: 1.2rem;
+
+
+                @media screen and (max-width: 1300px) {
+                    width: 100%;
+                }
+
+                @media screen and (max-width: 630px) {
+                    font-size: 1rem;
+                }
             }
 
             img {
                 width: 30%;
+                min-width: 218px;
             }
 
         }
@@ -176,8 +193,11 @@ main {
         margin: 70px 0;
 
         .flex {
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
+            flex-wrap: wrap;
+
+            @media screen and (max-width: 1068px) {}
         }
 
         li {
@@ -271,6 +291,8 @@ main {
         img {
             display: block;
             margin: 15px auto 50px;
+            width: 100%;
+            max-width: max-content;
         }
 
         a {
@@ -309,6 +331,10 @@ footer {
             display: grid;
             grid-template-columns: 30% 70%;
             color: white;
+
+            @media screen and (max-width: 1400px) {
+                display: block;
+            }
         }
 
         .left-part {
@@ -316,6 +342,15 @@ footer {
             flex-direction: column;
             height: 60%;
             justify-content: space-around;
+
+            @media screen and (max-width: 1400px) {
+                flex-direction: row;
+            }
+
+            @media screen and (max-width: 900px) {
+                flex-direction: column;
+                gap: 13px;
+            }
 
             p {
                 a {
@@ -368,6 +403,11 @@ footer {
                 grid-template-columns: 1fr 1fr;
                 gap: 15px;
                 margin-bottom: 20px;
+
+                @media screen and (max-width: 645px) {
+                    display: block;
+                }
+
             }
 
             .flex-column {
