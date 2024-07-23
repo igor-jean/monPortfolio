@@ -45,6 +45,10 @@ h5 {
 .container {
     width: 63%;
     margin: 0 auto;
+
+    @media screen and (max-width: 800px) {
+        width: 80%;
+    }
 }
 
 .separation {
