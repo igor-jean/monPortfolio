@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nav-background {
+  background-color: rgb(12, 1, 95);
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 63%;
+  margin: 0 auto;
+}
+
+.separation {
+  width: 70px;
+  height: 10px;
+  margin: 30px auto;
+  background-color: rgb(13, 2, 96);
+  position: relative;
+}
+.separation::after {
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  content: "";
+  height: 4px;
+  width: 90%;
+  background-color: rgb(165, 198, 99);
+  transform: translateX(-50%);
+}
+
+header {
+  height: 100vh;
+  background: no-repeat url("../img/header.jpg") center/cover;
+  color: rgb(249, 248, 255);
+  position: relative;
+}
+header .center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+header .center h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 50px;
+}
+header .center p {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+header nav {
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+header nav ul {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  position: relative;
+}
+header nav ul li:hover::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: rgb(165, 198, 99);
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  animation: hoverUnderine 0.5s;
+}
+@keyframes hoverUnderine {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+main {
+  padding: 70px 0;
+}
+main .presentation {
+  padding: 50px 0;
+}
+main .presentation h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: rgb(13, 2, 96);
+}
+main .presentation img {
+  object-fit: cover;
+  object-position: center;
+}
+main .presentation .flex {
+  justify-content: space-between;
+}
+main .presentation .flex p {
+  width: 60%;
+  font-size: 1.2rem;
+}
+main .presentation .flex img {
+  width: 30%;
+}
+main .skills {
+  margin: 70px 0;
+}
+main .skills .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+main .skills li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main .skills li i {
+  color: rgb(13, 2, 96);
+  font-size: 5rem;
+}
+main .skills li span {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: oblique;
+}
+main .portfolio h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: rgb(13, 2, 96);
+}
+main .portfolio p {
+  text-align: center;
+  margin-bottom: 50px;
+}
+main .portfolio .projets-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+main .portfolio .projets-grid .card {
+  width: 100%;
+  height: 430px;
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  overflow: hidden;
+}
+main .portfolio .projets-grid .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+main .portfolio .projets-grid .card .text-card {
+  padding: 15px;
+  text-align: center;
+}
+main .portfolio .projets-grid .card .text-card a {
+  color: rgb(13, 2, 96);
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+main .portfolio .projets-grid .card .text-card a:hover {
+  text-decoration: underline;
+}
+main .portfolio .projets-grid .card .text-card p {
+  text-align: left;
+}
+main .cv {
+  text-align: center;
+}
+main .cv h2 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: rgb(13, 2, 96);
+}
+main .cv img {
+  display: block;
+  margin: 15px auto 50px;
+}
+main .cv a {
+  padding: 10px 7px;
+  border-radius: 5px;
+  background-color: rgb(13, 2, 96);
+  color: rgb(243, 243, 252);
+}
+main .cv a:hover {
+  background-color: rgb(22, 1, 182);
+}
+
+footer .contact {
+  background: no-repeat url("../img/pexels-goumbik-574070.jpg") center/cover;
+  height: 100%;
+  width: 100%;
+  padding: 50px 0px 100px;
+}
+footer .contact h2 {
+  margin-bottom: 70px;
+  font-size: 2.5rem;
+  color: rgb(13, 2, 96);
+  text-align: center;
+}
+footer .contact .column-30-70 {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.521);
+  padding: 70px 50px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  color: white;
+}
+footer .contact .left-part {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  justify-content: space-around;
+}
+footer .contact .left-part p a {
+  color: rgb(196, 196, 196);
+}
+footer .contact .left-part div {
+  font-size: 2rem;
+}
+footer .contact .left-part div .fa-linkedin {
+  color: rgb(10, 102, 194);
+  position: relative;
+  z-index: 1111;
+}
+footer .contact .left-part div .fa-linkedin::after {
+  content: "";
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: white;
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  z-index: -10;
+}
+footer .contact .left-part div .fa-square-github {
+  color: black;
+  position: relative;
+  z-index: 112;
+}
+footer .contact .left-part div .fa-square-github::after {
+  content: "";
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: white;
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  z-index: -10;
+}
+footer .contact form .flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+footer .contact form .flex-column {
+  display: flex;
+  flex-direction: column;
+}
+footer .contact form input {
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(13, 2, 96);
+}
+footer .contact form textarea {
+  resize: none;
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(13, 2, 96);
+  height: 100px;
+  margin-bottom: 20px;
+}
+footer .contact .submit-button {
+  display: flex;
+  justify-content: center;
+}
+footer .contact .submit-button button {
+  font-family: inherit;
+  font-size: 20px;
+  background: white;
+  color: rgb(13, 2, 96);
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(13, 2, 96);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+footer .contact .submit-button button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+footer .contact .submit-button button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+footer .contact .submit-button button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+footer .contact .submit-button button:hover svg {
+  transform: translateX(1.8em) rotate(45deg) scale(1.1);
+}
+footer .contact .submit-button button:hover span {
+  transform: translateX(5em);
+}
+footer .contact .submit-button button:active {
+  transform: scale(0.95);
+}
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+footer .footer-bottom {
+  background-color: rgb(13, 2, 96);
+  color: white;
+  padding: 30px 50px;
+}
+footer .footer-bottom p {
+  text-align: center;
+}
+footer .footer-bottom p:first-child {
+  margin-bottom: 20px;
+}
+
+#portfolio,
+#cv {
+  transform: translateY(-80px);
+}/*# sourceMappingURL=style.css.map */
