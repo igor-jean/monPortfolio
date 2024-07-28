@@ -19,6 +19,10 @@ body {
   font-style: normal;
 }
 
+.red {
+  color: red;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -46,7 +50,7 @@ h5 {
   width: 63%;
   margin: 0 auto;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1650px) {
   .container {
     width: 80%;
   }
@@ -176,26 +180,70 @@ main .skills {
   margin: 70px 0;
 }
 main .skills .flex {
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
-main .skills li {
+@media screen and (max-width: 1230px) {
+  main .skills .flex {
+    flex-direction: column;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 740px) {
+  main .skills .flex {
+    height: initial;
+    gap: 100px;
+  }
+}
+main .skills .flex .row-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+}
+@media screen and (max-width: 1230px) {
+  main .skills .flex .row-flex {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 740px) {
+  main .skills .flex .row-flex {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 740px) {
+  main .skills .flex .row-flex {
+    flex-direction: column;
+  }
+}
+main .skills .flex .row-flex .column-flex {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
 }
-main .skills li i {
+main .skills .flex .row-flex .column-flex i {
   color: rgb(13, 2, 96);
   font-size: 5rem;
 }
-main .skills li span {
-  margin-top: 2rem;
+@media screen and (max-width: 740px) {
+  main .skills .flex .row-flex .column-flex i {
+    font-size: 3rem;
+  }
+}
+main .skills .flex .row-flex .column-flex span {
+  margin-top: 1rem;
   font-size: 1.5rem;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: oblique;
+}
+@media screen and (max-width: 740px) {
+  main .skills .flex .row-flex .column-flex span {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
 }
 main .portfolio h2 {
   text-align: center;
@@ -212,12 +260,27 @@ main .portfolio .projets-grid {
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
+@media screen and (max-width: 1100px) {
+  main .portfolio .projets-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 670px) {
+  main .portfolio .projets-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 main .portfolio .projets-grid .card {
   width: 100%;
   height: 430px;
   border-radius: 10px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   overflow: hidden;
+}
+@media screen and (max-width: 1650px) {
+  main .portfolio .projets-grid .card {
+    height: 500px;
+  }
 }
 main .portfolio .projets-grid .card img {
   width: 100%;
@@ -285,10 +348,17 @@ footer .contact .column-30-70 {
   display: grid;
   grid-template-columns: 30% 70%;
   color: white;
+  position: relative;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1080px) {
   footer .contact .column-30-70 {
     display: block;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 370px) {
+  footer .contact .column-30-70 {
+    padding: 15px;
   }
 }
 footer .contact .left-part {
@@ -297,7 +367,23 @@ footer .contact .left-part {
   height: 60%;
   justify-content: space-around;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 900px) {
+  footer .contact .left-part {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  footer .contact .left-part::after {
+    content: "";
+    height: 3px;
+    width: 90%;
+    background: rgb(114, 114, 117);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 1080px) {
   footer .contact .left-part {
     flex-direction: row;
   }
@@ -308,11 +394,21 @@ footer .contact .left-part {
     gap: 13px;
   }
 }
+@media screen and (max-width: 900px) {
+  footer .contact .left-part p {
+    text-align: center;
+  }
+}
 footer .contact .left-part p a {
   color: rgb(196, 196, 196);
 }
 footer .contact .left-part div {
   font-size: 2rem;
+}
+@media screen and (max-width: 900px) {
+  footer .contact .left-part div {
+    text-align: center;
+  }
 }
 footer .contact .left-part div .fa-linkedin {
   color: rgb(10, 102, 194);
@@ -352,7 +448,7 @@ footer .contact form .flex {
 }
 @media screen and (max-width: 645px) {
   footer .contact form .flex {
-    display: block;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 footer .contact form .flex-column {
@@ -369,7 +465,7 @@ footer .contact form textarea {
   padding: 7px 10px;
   border-radius: 5px;
   border: 1px solid rgb(13, 2, 96);
-  height: 100px;
+  height: 150px;
   margin-bottom: 20px;
 }
 footer .contact .submit-button {
@@ -390,6 +486,7 @@ footer .contact .submit-button button {
   overflow: hidden;
   transition: all 0.2s;
   cursor: pointer;
+  margin: 20px 0 0;
 }
 footer .contact .submit-button button span {
   display: block;
@@ -445,4 +542,40 @@ footer .footer-bottom p:first-child {
 .droits h3 {
   margin: 30px 0px 15px;
   color: rgb(13, 2, 96);
+}
+
+.msg-error-fixed {
+  background-color: rgb(250, 179, 179);
+  color: red;
+  border: 1px solid red;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px 50px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  animation: error 4s forwards;
+  opacity: 1;
+}
+@media screen and (max-width: 900px) {
+  .msg-error-fixed {
+    top: 50%;
+  }
+}
+
+@keyframes error {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
