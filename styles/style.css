@@ -142,6 +142,7 @@ main .presentation h2 {
 main .presentation img {
   object-fit: cover;
   object-position: center;
+  max-width: 230px;
 }
 main .presentation .flex {
   justify-content: space-between;
