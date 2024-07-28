@@ -1,0 +1,11 @@
+# Activer le module de réécriture
+RewriteEngine On
+
+# Redirection pour les mentions légales
+RewriteRule ^mentions-legales/?$ mentions-legales.html [L]
+
+# Redirection pour la politique de confidentialité
+RewriteRule ^politique-confidentialite/?$ politique-confidentialite.html [L]
+
+# Redirection pour le plan du site
+RewriteRule ^plan/?$ plan.html [L]

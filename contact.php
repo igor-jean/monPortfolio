@@ -15,17 +15,15 @@ if ($nom && $prenom && $email && $message && $chk) {
                 Email: $email<br>
                 Téléphone: $tel<br>
                 Message: $message</p>";
-    $headers = 'From: ' . $email . "\r\n" .
-        'Reply-To: ' . $email . "\r\n" .
+    $headers = 'From: contact@igor-jean.com' . "\r\n" .
+        'Reply-To: contact@igor-jean.com ' . "\r\n" .
         "Content-Type: text/html; charset=UTF-8\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         mail($to, $subject, $contenu, $headers);
-        echo "Votre message a été envoyé.";
+        header("Location: https://igor-jean.com/");
     } else {
-        echo "L'adresse email est invalide.";
+        header("Location: https://igor-jean.com/");
     }
-} else {
-    echo "Veuillez remplir tous les champs requis.";
 }

@@ -92,6 +92,11 @@ header .center h2 {
   font-size: 3.5rem;
   margin-bottom: 50px;
 }
+header .center h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
 header .center p {
   font-size: 2rem;
   letter-spacing: 2px;
@@ -533,6 +538,15 @@ footer .footer-bottom p:first-child {
 #portfolio,
 #cv {
   transform: translateY(-80px);
+}
+
+#contact {
+  transform: translateY(-288px);
+}
+@media screen and (max-width: 900px) {
+  #contact {
+    transform: translateY(-403px);
+  }
 }
 
 .droits h2 {
