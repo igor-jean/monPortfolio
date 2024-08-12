@@ -531,9 +531,6 @@ footer .footer-bottom {
 footer .footer-bottom p {
   text-align: center;
 }
-footer .footer-bottom p:first-child {
-  margin-bottom: 20px;
-}
 
 #portfolio,
 #cv {
