@@ -4,6 +4,7 @@ header {
     color: rgb(249, 248, 255);
     position: relative;
 
+
     .center {
         position: absolute;
         left: 50%;
@@ -300,4 +301,49 @@ footer {
         }
     }
 
+}
+
+.reseaux {
+    position: fixed;
+    font-size: 2rem;
+    top: 7px;
+    right: 40px;
+
+    a {
+        z-index: 300;
+    }
+
+    .fa-linkedin {
+        color: rgb(10, 102, 194);
+        position: relative;
+        z-index: 111;
+
+        &::after {
+            content: "";
+            width: 1.4rem;
+            height: 1.4rem;
+            background-color: white;
+            position: absolute;
+            top: 5px;
+            left: 3px;
+            z-index: -10;
+        }
+    }
+
+    .fa-square-github {
+        color: black;
+        position: relative;
+        z-index: 112;
+
+        &::after {
+            content: "";
+            width: 1.4rem;
+            height: 1.4rem;
+            background-color: white;
+            position: absolute;
+            top: 5px;
+            left: 3px;
+            z-index: -10;
+        }
+    }
 }

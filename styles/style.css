@@ -260,6 +260,46 @@ footer .footer-bottom p {
   text-align: center;
 }
 
+.reseaux {
+  position: fixed;
+  font-size: 2rem;
+  top: 7px;
+  right: 40px;
+}
+.reseaux a {
+  z-index: 300;
+}
+.reseaux .fa-linkedin {
+  color: rgb(10, 102, 194);
+  position: relative;
+  z-index: 111;
+}
+.reseaux .fa-linkedin::after {
+  content: "";
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: white;
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  z-index: -10;
+}
+.reseaux .fa-square-github {
+  color: black;
+  position: relative;
+  z-index: 112;
+}
+.reseaux .fa-square-github::after {
+  content: "";
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: white;
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  z-index: -10;
+}
+
 .contact-template header {
   background: no-repeat url("../img/pexels-goumbik-574070.jpg") center/cover;
 }
