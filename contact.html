@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="styles\style.css" />
+		<meta
+			name="description"
+			content="Portfolio d'Igor Jean, développeur web junior | HTML, CSS, PHP, JavaScript, Symfony et Bootstrap. Découvrez mes projets et compétences en développement web."
+		/>
+
+		<title>Portfolio d'Igor Jean | Contactez-moi</title>
+	</head>
+
+	<body class="contact-template">
+		<header id="top">
+			<nav class="nav-background">
+				<div class="container">
+					<ul>
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#cv">CV</a></li>
+						<li><a href="#" class="page-active">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+			<section class="contact">
+				<h2>Contactez-moi</h2>
+				<div class="container">
+					<div class="column-30-70">
+						<p class="msg-error-fixed">Veuillez renseigner les champs requis</p>
+						<div class="left-part">
+							<p>
+								<i class="fa-regular fa-paper-plane"></i>&emsp;
+								<a href="mailto:igorjean79@gmail.com"> igorjean79@gmail.com </a>
+							</p>
+							<p>
+								<i class="fa-solid fa-phone"></i>&emsp;
+								<a href="tel:0771279030">07 71 27 90 30</a>
+							</p>
+							<div>
+								<a href="https://www.linkedin.com/in/igor-jean-74b28a262/">
+									<i class="fa-brands fa-linkedin"></i>
+								</a>
+								&emsp;
+								<a href="https://github.com/igor-jean">
+									<i class="fa-brands fa-square-github"></i>
+								</a>
+							</div>
+						</div>
+						<form action="contact.php" method="get" id="contact-form">
+							<div id="contact"></div>
+							<div class="flex">
+								<div class="flex-column">
+									<label for="nom">Nom <span class="red">*</span></label>
+									<input type="text" id="nom" name="nom" />
+								</div>
+								<div class="flex-column">
+									<label for="prenom">Prénom</label>
+									<input type="text" id="prenom" name="prenom" />
+								</div>
+							</div>
+							<div class="flex">
+								<div class="flex-column">
+									<label for="email">E-mail <span class="red">*</span></label>
+									<input type="email" id="email" name="email" />
+								</div>
+								<div class="flex-column">
+									<label for="telephone">Téléphone</label>
+									<input type="number" id="telephone" name="telephone" />
+								</div>
+							</div>
+							<div class="flex-column">
+								<label for="message"> Message <span class="red">*</span> </label>
+								<textarea id="message" name="message"></textarea>
+							</div>
+							<div class="flex-column">
+								<label for="chk">
+									<input type="checkbox" id="chk" name="chk" />&emsp;En soumettant ce formulaire, j'accepte que mes données
+									personnelles soient utilisées pour me recontacter. Aucun autre traitement ne sera effectué avec mes informations.
+									Pour connaître et exercer vos droits, veuillez consultez la Politique de confidentialité.
+								</label>
+							</div>
+							<div class="submit-button">
+								<button type="submit">
+									<div class="svg-wrapper-1">
+										<div class="svg-wrapper">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+												<path fill="none" d="M0 0h24v24H0z"></path>
+												<path
+													fill="currentColor"
+													d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+												></path>
+											</svg>
+										</div>
+									</div>
+									<span>Envoyer</span>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</header>
+		<footer>
+			<section class="footer-bottom">
+				<p>
+					<a href="/plan">Plan du site</a> |
+					<a href="/mentions-legales">Mentions légales</a>
+					|
+					<a href="/politique-confidentialite"> Politique de confidentialité </a>
+				</p>
+			</section>
+		</footer>
+		<script src="contact.js"></script>
+	</body>
+</html>

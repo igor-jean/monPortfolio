@@ -1,79 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.red {
-  color: red;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.nav-background {
-  background-color: rgb(12, 1, 95);
-}
-
-.flex {
-  display: flex;
-}
-
-.container {
-  width: 63%;
-  margin: 0 auto;
-}
-@media screen and (max-width: 1650px) {
-  .container {
-    width: 80%;
-  }
-}
-
-.separation {
-  width: 70px;
-  height: 10px;
-  margin: 30px auto;
-  background-color: rgb(13, 2, 96);
-  position: relative;
-}
-.separation::after {
-  position: absolute;
-  top: 3px;
-  left: 50%;
-  content: "";
-  height: 4px;
-  width: 90%;
-  background-color: rgb(165, 198, 99);
-  transform: translateX(-50%);
-}
-
 header {
   height: 100vh;
   background: no-repeat url("../img/header.jpg") center/cover;
@@ -334,19 +258,31 @@ main .cv a:hover {
   background-color: rgb(22, 1, 182);
 }
 
-footer .contact {
+footer .footer-bottom {
+  background-color: rgb(13, 2, 96);
+  color: white;
+  padding: 30px 50px;
+}
+footer .footer-bottom p {
+  text-align: center;
+}
+
+.contact-template header {
+  background: no-repeat url("../img/pexels-goumbik-574070.jpg") center/cover;
+}
+.contact-template .contact {
   background: no-repeat url("../img/pexels-goumbik-574070.jpg") center/cover;
   height: 100%;
   width: 100%;
   padding: 50px 0px 100px;
 }
-footer .contact h2 {
-  margin-bottom: 70px;
+.contact-template .contact h2 {
+  margin: 40px;
   font-size: 2.5rem;
   color: rgb(13, 2, 96);
   text-align: center;
 }
-footer .contact .column-30-70 {
+.contact-template .contact .column-30-70 {
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.521);
   padding: 70px 50px;
@@ -356,28 +292,28 @@ footer .contact .column-30-70 {
   position: relative;
 }
 @media screen and (max-width: 1080px) {
-  footer .contact .column-30-70 {
+  .contact-template .contact .column-30-70 {
     display: block;
     padding: 30px;
   }
 }
 @media screen and (max-width: 370px) {
-  footer .contact .column-30-70 {
+  .contact-template .contact .column-30-70 {
     padding: 15px;
   }
 }
-footer .contact .left-part {
+.contact-template .contact .left-part {
   display: flex;
   flex-direction: column;
   height: 60%;
   justify-content: space-around;
 }
 @media screen and (max-width: 900px) {
-  footer .contact .left-part {
+  .contact-template .contact .left-part {
     position: relative;
     margin-bottom: 30px;
   }
-  footer .contact .left-part::after {
+  .contact-template .contact .left-part::after {
     content: "";
     height: 3px;
     width: 90%;
@@ -389,38 +325,38 @@ footer .contact .left-part {
   }
 }
 @media screen and (max-width: 1080px) {
-  footer .contact .left-part {
+  .contact-template .contact .left-part {
     flex-direction: row;
   }
 }
 @media screen and (max-width: 900px) {
-  footer .contact .left-part {
+  .contact-template .contact .left-part {
     flex-direction: column;
     gap: 13px;
   }
 }
 @media screen and (max-width: 900px) {
-  footer .contact .left-part p {
+  .contact-template .contact .left-part p {
     text-align: center;
   }
 }
-footer .contact .left-part p a {
+.contact-template .contact .left-part p a {
   color: rgb(196, 196, 196);
 }
-footer .contact .left-part div {
+.contact-template .contact .left-part div {
   font-size: 2rem;
 }
 @media screen and (max-width: 900px) {
-  footer .contact .left-part div {
+  .contact-template .contact .left-part div {
     text-align: center;
   }
 }
-footer .contact .left-part div .fa-linkedin {
+.contact-template .contact .left-part div .fa-linkedin {
   color: rgb(10, 102, 194);
   position: relative;
   z-index: 1111;
 }
-footer .contact .left-part div .fa-linkedin::after {
+.contact-template .contact .left-part div .fa-linkedin::after {
   content: "";
   width: 1.4rem;
   height: 1.4rem;
@@ -430,12 +366,12 @@ footer .contact .left-part div .fa-linkedin::after {
   left: 3px;
   z-index: -10;
 }
-footer .contact .left-part div .fa-square-github {
+.contact-template .contact .left-part div .fa-square-github {
   color: black;
   position: relative;
   z-index: 112;
 }
-footer .contact .left-part div .fa-square-github::after {
+.contact-template .contact .left-part div .fa-square-github::after {
   content: "";
   width: 1.4rem;
   height: 1.4rem;
@@ -445,27 +381,27 @@ footer .contact .left-part div .fa-square-github::after {
   left: 3px;
   z-index: -10;
 }
-footer .contact form .flex {
+.contact-template .contact form .flex {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 645px) {
-  footer .contact form .flex {
+  .contact-template .contact form .flex {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-footer .contact form .flex-column {
+.contact-template .contact form .flex-column {
   display: flex;
   flex-direction: column;
 }
-footer .contact form input {
+.contact-template .contact form input {
   padding: 7px 10px;
   border-radius: 5px;
   border: 1px solid rgb(13, 2, 96);
 }
-footer .contact form textarea {
+.contact-template .contact form textarea {
   resize: none;
   padding: 7px 10px;
   border-radius: 5px;
@@ -473,11 +409,11 @@ footer .contact form textarea {
   height: 150px;
   margin-bottom: 20px;
 }
-footer .contact .submit-button {
+.contact-template .contact .submit-button {
   display: flex;
   justify-content: center;
 }
-footer .contact .submit-button button {
+.contact-template .contact .submit-button button {
   font-family: inherit;
   font-size: 20px;
   background: white;
@@ -493,26 +429,26 @@ footer .contact .submit-button button {
   cursor: pointer;
   margin: 20px 0 0;
 }
-footer .contact .submit-button button span {
+.contact-template .contact .submit-button button span {
   display: block;
   margin-left: 0.3em;
   transition: all 0.3s ease-in-out;
 }
-footer .contact .submit-button button svg {
+.contact-template .contact .submit-button button svg {
   display: block;
   transform-origin: center center;
   transition: transform 0.3s ease-in-out;
 }
-footer .contact .submit-button button:hover .svg-wrapper {
+.contact-template .contact .submit-button button:hover .svg-wrapper {
   animation: fly-1 0.6s ease-in-out infinite alternate;
 }
-footer .contact .submit-button button:hover svg {
+.contact-template .contact .submit-button button:hover svg {
   transform: translateX(1.8em) rotate(45deg) scale(1.1);
 }
-footer .contact .submit-button button:hover span {
+.contact-template .contact .submit-button button:hover span {
   transform: translateX(5em);
 }
-footer .contact .submit-button button:active {
+.contact-template .contact .submit-button button:active {
   transform: scale(0.95);
 }
 @keyframes fly-1 {
@@ -522,37 +458,6 @@ footer .contact .submit-button button:active {
   to {
     transform: translateY(-0.1em);
   }
-}
-footer .footer-bottom {
-  background-color: rgb(13, 2, 96);
-  color: white;
-  padding: 30px 50px;
-}
-footer .footer-bottom p {
-  text-align: center;
-}
-
-#portfolio,
-#cv {
-  transform: translateY(-80px);
-}
-
-#contact {
-  transform: translateY(-288px);
-}
-@media screen and (max-width: 900px) {
-  #contact {
-    transform: translateY(-403px);
-  }
-}
-
-.droits h2 {
-  margin: 50px 0px 30px;
-  color: rgb(13, 2, 96);
-}
-.droits h3 {
-  margin: 30px 0px 15px;
-  color: rgb(13, 2, 96);
 }
 
 .msg-error-fixed {
@@ -589,4 +494,108 @@ footer .footer-bottom p {
   100% {
     opacity: 0;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.red {
+  color: red;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nav-background {
+  background-color: rgb(12, 1, 95);
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 63%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1650px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.separation {
+  width: 70px;
+  height: 10px;
+  margin: 30px auto;
+  background-color: rgb(13, 2, 96);
+  position: relative;
+}
+.separation::after {
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  content: "";
+  height: 4px;
+  width: 90%;
+  background-color: rgb(165, 198, 99);
+  transform: translateX(-50%);
+}
+
+#portfolio,
+#cv {
+  transform: translateY(-80px);
+}
+
+#contact {
+  transform: translateY(-288px);
+}
+@media screen and (max-width: 900px) {
+  #contact {
+    transform: translateY(-403px);
+  }
+}
+
+.droits h2 {
+  margin: 50px 0px 30px;
+  color: rgb(13, 2, 96);
+}
+.droits h3 {
+  margin: 30px 0px 15px;
+  color: rgb(13, 2, 96);
+}
+
+.page-active {
+  color: rgb(165, 198, 99);
+  font-weight: bold;
+  cursor: default;
 }/*# sourceMappingURL=style.css.map */
