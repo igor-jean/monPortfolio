@@ -72,38 +72,31 @@ main .presentation h2 {
   font-size: 2.5rem;
   color: rgb(13, 2, 96);
 }
-main .presentation img {
-  object-fit: cover;
-  object-position: center;
-  max-width: 230px;
+main .presentation p {
+  text-align: center;
 }
-main .presentation .flex {
-  justify-content: space-between;
-}
-@media screen and (max-width: 1300px) {
-  main .presentation .flex {
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 15px;
-  }
-}
-main .presentation .flex p {
-  width: 60%;
+main .presentation p,
+main .presentation ul {
+  width: 70%;
+  margin: 0 auto;
   font-size: 1.2rem;
 }
-@media screen and (max-width: 1300px) {
-  main .presentation .flex p {
-    width: 100%;
-  }
-}
 @media screen and (max-width: 630px) {
-  main .presentation .flex p {
+  main .presentation p,
+  main .presentation ul {
     font-size: 1rem;
   }
 }
-main .presentation .flex img {
-  width: 30%;
-  min-width: 218px;
+main .presentation li {
+  padding-left: 50px;
+  margin-bottom: 10px;
+}
+main .presentation li:first-child {
+  padding: 0;
+  margin-bottom: 20px;
+}
+main .presentation li i {
+  font-size: 0.5rem;
 }
 main .skills {
   margin: 70px 0;

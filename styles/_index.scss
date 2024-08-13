@@ -85,40 +85,34 @@ main {
             color: rgb(13, 2, 96);
         }
 
-        img {
-            object-fit: cover;
-            object-position: center;
-            max-width: 230px;
+        p {
+            text-align: center;
         }
 
-        .flex {
-            justify-content: space-between;
+        p,
+        ul {
+            width: 70%;
+            margin: 0 auto;
+            font-size: 1.2rem;
 
-            @media screen and (max-width: 1300px) {
-                flex-direction: column-reverse;
-                align-items: center;
-                gap: 15px;
+
+            @media screen and (max-width: 630px) {
+                font-size: 1rem;
+            }
+        }
+
+        li {
+            padding-left: 50px;
+            margin-bottom: 10px;
+
+            &:first-child {
+                padding: 0;
+                margin-bottom: 20px;
             }
 
-            p {
-                width: 60%;
-                font-size: 1.2rem;
-
-
-                @media screen and (max-width: 1300px) {
-                    width: 100%;
-                }
-
-                @media screen and (max-width: 630px) {
-                    font-size: 1rem;
-                }
+            i {
+                font-size: .5rem;
             }
-
-            img {
-                width: 30%;
-                min-width: 218px;
-            }
-
         }
 
     }
