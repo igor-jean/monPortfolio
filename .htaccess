@@ -9,3 +9,12 @@ RewriteRule ^politique-confidentialite/?$ politique-confidentialite.html [L]
 
 # Redirection pour le plan du site
 RewriteRule ^plan/?$ plan.html [L]
+
+# Redirection pour le plan du site
+RewriteRule ^accueil/?$ index.html [L]
+
+# Redirection pour le plan du site
+RewriteRule ^portfolio/?$ portfolio.html [L]
+
+# Redirection pour le plan du site
+RewriteRule ^actualites/?$ actus.html [L]
