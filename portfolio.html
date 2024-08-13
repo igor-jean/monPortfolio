@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="styles\style.css" />
+		<meta
+			name="description"
+			content="Portfolio d'Igor Jean, développeur web junior | HTML, CSS, PHP, JavaScript, Symfony et Bootstrap. Découvrez mes projets et compétences en développement web."
+		/>
+
+		<title>Portfolio d'Igor Jean | Développeur web junior</title>
+	</head>
+
+	<body>
+		<header id="top">
+			<nav>
+				<div class="container">
+					<ul>
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="#" class="page-active">Portfolio</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="center">
+				<h2>Igor Jean</h2>
+				<p>Portfolio</p>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<div id="portfolio"></div>
+				<section class="portfolio">
+					<h2>Mon travail</h2>
+					<p>Voici quelques exemples de projets réalisés au cours de la formation, du stage et de mon temps libre :</p>
+					<div class="projets-grid">
+						<div class="card">
+							<div class="img-card">
+								<img src="img\captureNumPRFVitrine.png" alt="capture" />
+							</div>
+							<div class="text-card">
+								<a href="https://numprf.fr/" target="_blank"> Site vitrine: NumPRF </a>
+								<p>Lors de mon stage, j'ai refondu leur site statique en utilisant HTML, CSS (Sass), JavaScript et un peu de PHP.</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="img-card">
+								<img src="img\captureNumPRF.png" alt="capture" />
+							</div>
+							<div class="text-card">
+								<h3>NumPRF</h3>
+								<p>
+									J'ai travaillé sur une application web de gestion des plans régionaux de formation pour les missions locales,
+									utilisant le framework Symfony (PHP) pour le back-end et Bootstrap (CSS) pour le front-end.
+								</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="img-card">
+								<img src="img\captureCopeaux.png" alt="capture" />
+							</div>
+							<div class="text-card">
+								<a href="https://www.les-copeaux-du-praud.fr/" target="_blank"> Les Copeaux du Praud </a>
+								<p>
+									Site fait avec Symfony pour un ami menuisier durant mon temps libre. C'est un petit projet pour Symfony mais je
+									voulais continuer à m'exercer sur ce framework.
+								</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="img-card">
+								<img src="img\captureHereWeGo.png" alt="capture" />
+							</div>
+							<div class="text-card">
+								<a href="https://github.com/igor-jean/here_we_go" target="_blank"> Here we go </a>
+								<p>
+									Ce projet a été réalisé dans le cadre du projet "fil rouge" de notre formation, en binôme avec un collègue de
+									formation.
+								</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="img-card">
+								<img src="img\captureLocCompany.png" alt="capture" />
+							</div>
+							<div class="text-card">
+								<a href="https://github.com/igor-jean/superLocCar" target="_blank"> SuperLocCar </a>
+								<p>Projet fait à l'aide de Bootstrap en formation.</p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="img-card">
+								<img src="img\captureEcoPratique.png" alt="capture" />
+							</div>
+							<div class="text-card">
+								<a href="https://github.com/igor-jean/ECF-Int-gration-Eco_Pratique" target="_blank"> ECF: Eco-pratique </a>
+								<p>Evaluation Front-end en cours de formation.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<section class="footer-bottom">
+				<p>
+					<a href="/plan">Plan du site</a> |
+					<a href="/mentions-legales">Mentions légales</a>
+					|
+					<a href="/politique-confidentialite"> Politique de confidentialité </a>
+				</p>
+			</section>
+		</footer>
+		<script src="index.js"></script>
+	</body>
+</html>
