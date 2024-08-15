@@ -14,7 +14,7 @@ header .center {
 header .center h2 {
   text-align: center;
   font-size: 3.5rem;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 header .center h3 {
   text-align: center;
@@ -63,6 +63,11 @@ header nav ul li:hover::after {
 main {
   padding: 70px 0;
 }
+@media screen and (max-width: 630px) {
+  main {
+    padding: 0;
+  }
+}
 main .presentation {
   padding: 50px 0;
 }
@@ -71,6 +76,11 @@ main .presentation h2 {
   margin-bottom: 30px;
   font-size: 2.5rem;
   color: rgb(13, 2, 96);
+}
+@media screen and (max-width: 630px) {
+  main .presentation h2 {
+    font-size: 1.5rem;
+  }
 }
 main .presentation p {
   text-align: center;
@@ -85,11 +95,17 @@ main .presentation ul {
   main .presentation p,
   main .presentation ul {
     font-size: 1rem;
+    width: 100%;
   }
 }
 main .presentation li {
   padding-left: 50px;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 630px) {
+  main .presentation li {
+    padding-left: 15px;
+  }
 }
 main .presentation li:first-child {
   padding: 0;
@@ -229,6 +245,7 @@ main .portfolio .projets-grid .card .text-card p {
 }
 main .cv {
   text-align: center;
+  padding-bottom: 30px;
 }
 main .cv h2 {
   margin-bottom: 30px;
@@ -261,10 +278,7 @@ footer .footer-bottom p {
 }
 
 .reseaux {
-  position: fixed;
   font-size: 2rem;
-  top: 7px;
-  right: 40px;
 }
 .reseaux a {
   z-index: 300;
@@ -583,6 +597,11 @@ h5 {
 @media screen and (max-width: 1650px) {
   .container {
     width: 80%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container {
+    width: 95%;
   }
 }
 

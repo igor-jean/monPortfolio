@@ -1,20 +1,16 @@
 # Activer le module de réécriture
 RewriteEngine On
 
-# Redirection pour les mentions légales
-RewriteRule ^mentions-legales/?$ mentions-legales.html [L]
+RewriteRule ^mentions-legales/?$ pages/mentions-legales.html [L]
 
-# Redirection pour la politique de confidentialité
-RewriteRule ^politique-confidentialite/?$ politique-confidentialite.html [L]
+RewriteRule ^politique-confidentialite/?$ pages/politique-confidentialite.html [L]
 
-# Redirection pour le plan du site
-RewriteRule ^plan/?$ plan.html [L]
+RewriteRule ^plan/?$ pages/plan.html [L]
 
-# Redirection pour le plan du site
 RewriteRule ^accueil/?$ index.html [L]
 
-# Redirection pour le plan du site
-RewriteRule ^portfolio/?$ portfolio.html [L]
+RewriteRule ^portfolio/?$ pages/portfolio.html [L]
 
-# Redirection pour le plan du site
-RewriteRule ^actualites/?$ actus.html [L]
+RewriteRule ^actualites/?$ pages/actus.html [L]
+
+RewriteRule ^actualites/?$ pages/contact.html [L]
