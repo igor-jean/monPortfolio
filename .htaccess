@@ -13,4 +13,4 @@ RewriteRule ^portfolio/?$ pages/portfolio.html [L]
 
 RewriteRule ^actualites/?$ pages/actus.html [L]
 
-RewriteRule ^actualites/?$ pages/contact.html [L]
+RewriteRule ^contact/?$ pages/contact.html [L]
