@@ -11,6 +11,6 @@ RewriteRule ^accueil/?$ index.html [L]
 
 RewriteRule ^portfolio/?$ pages/portfolio.html [L]
 
-RewriteRule ^actualites/?$ pages/actus.html [L]
+RewriteRule ^actus/?$ pages/actus.html [L]
 
 RewriteRule ^contact/?$ pages/contact.html [L]
