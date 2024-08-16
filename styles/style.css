@@ -322,6 +322,9 @@ footer .footer-bottom p {
     height: 100%;
   }
 }
+.contact-template .nav-background {
+  background-color: rgb(12, 1, 95);
+}
 .contact-template .contact {
   background: no-repeat url("../img/pexels-goumbik-574070.jpg") center/cover;
   height: 100%;
