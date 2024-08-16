@@ -185,7 +185,7 @@ main .skills .flex .row-flex .column-flex span {
 }
 main .portfolio h2 {
   text-align: center;
-  margin-bottom: 30px;
+  margin: 30px 0;
   font-size: 2.5rem;
   color: rgb(13, 2, 96);
 }
