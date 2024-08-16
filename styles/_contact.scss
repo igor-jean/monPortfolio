@@ -1,6 +1,10 @@
 .contact-template {
     header {
         background: no-repeat url("../img/pexels-goumbik-574070.jpg") center / cover;
+
+        @media screen and (max-width: 830px) {
+            height: 100%;
+        }
     }
 
     .contact {

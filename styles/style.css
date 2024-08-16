@@ -317,6 +317,11 @@ footer .footer-bottom p {
 .contact-template header {
   background: no-repeat url("../img/pexels-goumbik-574070.jpg") center/cover;
 }
+@media screen and (max-width: 830px) {
+  .contact-template header {
+    height: 100%;
+  }
+}
 .contact-template .contact {
   background: no-repeat url("../img/pexels-goumbik-574070.jpg") center/cover;
   height: 100%;
