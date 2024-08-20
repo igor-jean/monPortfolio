@@ -23,8 +23,18 @@
             width: 100%;
             display: flex;
 
+            @media screen and (max-width: 1000px) {
+                flex-direction: column;
+            }
+
             img {
                 width: 30%;
+                object-fit: cover;
+                object-position: center;
+
+                @media screen and (max-width: 1000px) {
+                    width: 100%;
+                }
             }
 
             .text-content {

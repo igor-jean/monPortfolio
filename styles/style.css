@@ -570,8 +570,20 @@ footer .footer-bottom p {
   width: 100%;
   display: flex;
 }
+@media screen and (max-width: 1000px) {
+  .actus article .lien-article {
+    flex-direction: column;
+  }
+}
 .actus article .lien-article img {
   width: 30%;
+  object-fit: cover;
+  object-position: center;
+}
+@media screen and (max-width: 1000px) {
+  .actus article .lien-article img {
+    width: 100%;
+  }
 }
 .actus article .lien-article .text-content {
   padding: 15px;
